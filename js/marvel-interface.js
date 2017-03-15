@@ -5,12 +5,12 @@ $(document).ready(function(){
   $('.carousel').carousel();
   $("#my-hero").submit(function(event){
     event.preventDefault();
-    $('.carousel').text("");
+    // $('.carousel').text("");
     heroName = $('#name').val();
 
     newHero = new Marvel(heroName);
     newHero.getFirst20Issues(heroName);
-
+    $('.carousel').carousel();
     // newHero.getCover();
   })
 })
