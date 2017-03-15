@@ -53,6 +53,7 @@ Marvel.prototype.getCover = function(){
     imgUrl += (this.comics[i].images[0].path + ".");
     imgUrl += this.comics[i].images[0].extension;
     coverArr.push(imgUrl);
+    console.log(imgUrl);
   }
   this.covers = coverArr;
 }
